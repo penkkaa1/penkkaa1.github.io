@@ -38,6 +38,7 @@ const ProgressButton = () => {
                 borderRadius: "8px",
                 overflow: "hidden",
                 cursor: "pointer",
+                WebkitTapHighlightColor: "transparent",
             }}
         >
             <div
