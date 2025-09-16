@@ -1,12 +1,10 @@
-import { useState } from 'react'
 import './App.css'
 import photo from './assets/photo.jpg';
 import linkedin from './assets/InBug-White.png';
 import github from './assets/github-mark-white.png';
-
+import ProgressButton from './components/ProgressButton';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -18,19 +16,17 @@ function App() {
           Aaron Penkkala
         </h1>
         <a href="https://github.com/penkkaa1" className="hoverShadow-sm" target="_blank" style={{ display: "flex", alignItems: "center" }}>
-          <img src={github} alt="GitHub logo" style={{ height: "2.5em" }} />
+          <img src={github} alt="GitHub" style={{ height: "2.5em" }} />
         </a>
         <a href="https://fi.linkedin.com/in/aaron-penkkala-343951199" className='hoverShadow-sm' target="_blank" style={{ display: "flex", alignItems: "center" }}>
-          <img src={linkedin} alt="LinkedIn logo" style={{ height: "2.5em" }} />
+          <img src={linkedin} alt="LinkedIn" style={{ height: "2.5em" }} />
         </a>
       </div>
       <h2>4th Year Computer Science Student at Aalto University</h2>
       <h2>Majoring in Secure Systems</h2>
-
+      
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          Count is {count}
-        </button>
+        <ProgressButton/>
       </div>
     </>
   )
